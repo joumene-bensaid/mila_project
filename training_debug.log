@@ -1,0 +1,585 @@
+2025-06-29 23:47:02,903 - INFO - Starting training for task: sst2
+2025-06-29 23:47:02,904 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-29 23:47:02,951 - INFO - CUDA available: Quadro RTX 8000
+2025-06-29 23:47:03,231 - INFO - Tokenizer loaded successfully
+2025-06-29 23:47:03,232 - INFO - Loading dataset: glue/sst2
+2025-06-29 23:47:05,164 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-29 23:47:05,214 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-29 23:47:05,215 - INFO - Loading model: bert-base-uncased
+2025-06-29 23:47:07,719 - INFO - Model loaded and moved to device: cuda
+2025-06-29 23:47:07,720 - INFO - Setting up training arguments
+2025-06-29 23:47:07,809 - INFO - Setting up trainer
+2025-06-29 23:47:07,846 - INFO - Starting training...
+2025-06-29 23:47:25,967 - INFO - Training completed successfully
+2025-06-29 23:47:26,155 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-29 23:47:26,158 - INFO - Starting training for task: qnli
+2025-06-29 23:47:26,158 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-29 23:47:26,159 - INFO - CUDA available: Quadro RTX 8000
+2025-06-29 23:47:26,377 - INFO - Tokenizer loaded successfully
+2025-06-29 23:47:26,377 - INFO - Loading dataset: glue/qnli
+2025-06-29 23:47:27,834 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-29 23:47:27,884 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-29 23:47:27,885 - INFO - Loading model: bert-base-uncased
+2025-06-29 23:47:28,234 - INFO - Model loaded and moved to device: cuda
+2025-06-29 23:47:28,235 - INFO - Setting up training arguments
+2025-06-29 23:47:28,264 - INFO - Setting up trainer
+2025-06-29 23:47:28,278 - INFO - Starting training...
+2025-06-29 23:47:56,611 - INFO - Training completed successfully
+2025-06-29 23:47:56,801 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 00:17:02,027 - INFO - Starting test0_soft_soup experiment
+2025-06-30 00:17:02,028 - INFO - WandB enabled: True
+2025-06-30 00:17:02,028 - INFO - Configuration: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:17:03,524 - INFO - WandB initialized
+2025-06-30 00:17:03,524 - INFO - ==================================================
+2025-06-30 00:17:03,525 - INFO - PHASE 1: Training models
+2025-06-30 00:17:03,525 - INFO - ==================================================
+2025-06-30 00:17:03,525 - INFO - Training model 1 on task: sst2
+2025-06-30 00:17:03,526 - INFO - Starting training for task: sst2
+2025-06-30 00:17:03,526 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:17:03,577 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:17:03,903 - INFO - Tokenizer loaded successfully
+2025-06-30 00:17:03,905 - INFO - Loading dataset: glue/sst2
+2025-06-30 00:17:05,933 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 00:17:05,980 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:17:05,981 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:17:08,631 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:17:08,631 - INFO - Setting up training arguments
+2025-06-30 00:17:08,714 - INFO - Setting up trainer
+2025-06-30 00:17:08,740 - INFO - Starting training...
+2025-06-30 00:17:27,338 - INFO - Training completed successfully
+2025-06-30 00:17:27,535 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 00:17:27,538 - INFO - Model 1 training completed
+2025-06-30 00:17:27,538 - INFO - Training model 2 on task: qnli
+2025-06-30 00:17:27,539 - INFO - Starting training for task: qnli
+2025-06-30 00:17:27,539 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:17:27,539 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:17:27,735 - INFO - Tokenizer loaded successfully
+2025-06-30 00:17:27,735 - INFO - Loading dataset: glue/qnli
+2025-06-30 00:17:29,001 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 00:17:29,054 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:17:29,055 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:17:29,358 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:17:29,359 - INFO - Setting up training arguments
+2025-06-30 00:17:29,414 - INFO - Setting up trainer
+2025-06-30 00:17:29,427 - INFO - Starting training...
+2025-06-30 00:17:58,486 - INFO - Training completed successfully
+2025-06-30 00:17:59,287 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 00:17:59,290 - INFO - Model 2 training completed
+2025-06-30 00:17:59,291 - INFO - ==================================================
+2025-06-30 00:17:59,292 - INFO - PHASE 2: Model fusion
+2025-06-30 00:17:59,292 - INFO - ==================================================
+2025-06-30 00:17:59,587 - INFO - Model fusion completed
+2025-06-30 00:17:59,588 - INFO - ==================================================
+2025-06-30 00:17:59,589 - INFO - PHASE 3: Evaluation
+2025-06-30 00:17:59,589 - INFO - ==================================================
+2025-06-30 00:17:59,589 - INFO - Evaluating individual models...
+2025-06-30 00:18:03,336 - INFO - Evaluating fused model...
+2025-06-30 00:18:05,241 - INFO - ==================================================
+2025-06-30 00:18:05,242 - INFO - PHASE 4: Results
+2025-06-30 00:18:05,242 - INFO - ==================================================
+2025-06-30 00:18:05,243 - INFO - Experiment completed successfully!
+2025-06-30 00:18:05,786 - INFO - Results logged to WandB
+2025-06-30 00:27:58,149 - INFO - Starting training for task: sst2
+2025-06-30 00:27:58,150 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:27:58,195 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:27:58,585 - INFO - Tokenizer loaded successfully
+2025-06-30 00:27:58,586 - INFO - Loading dataset: glue/sst2
+2025-06-30 00:28:00,422 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 00:28:00,471 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:28:00,472 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:28:03,155 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:28:03,156 - INFO - Setting up training arguments
+2025-06-30 00:28:03,212 - INFO - Setting up trainer
+2025-06-30 00:28:03,251 - INFO - Starting training...
+2025-06-30 00:28:21,810 - INFO - Training completed successfully
+2025-06-30 00:28:21,980 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 00:28:21,982 - INFO - Starting training for task: qnli
+2025-06-30 00:28:21,983 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:28:21,983 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:28:22,189 - INFO - Tokenizer loaded successfully
+2025-06-30 00:28:22,189 - INFO - Loading dataset: glue/qnli
+2025-06-30 00:28:23,507 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 00:28:23,557 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:28:23,558 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:28:23,898 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:28:23,898 - INFO - Setting up training arguments
+2025-06-30 00:28:23,987 - INFO - Setting up trainer
+2025-06-30 00:28:24,001 - INFO - Starting training...
+2025-06-30 00:28:54,773 - INFO - Training completed successfully
+2025-06-30 00:28:54,954 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 00:33:04,531 - INFO - Starting training for task: sst2
+2025-06-30 00:33:04,532 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:33:04,587 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:33:04,895 - INFO - Tokenizer loaded successfully
+2025-06-30 00:33:04,896 - INFO - Loading dataset: glue/sst2
+2025-06-30 00:33:06,798 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 00:33:06,848 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:33:06,848 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:33:09,529 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:33:09,530 - INFO - Setting up training arguments
+2025-06-30 00:33:09,621 - INFO - Setting up trainer
+2025-06-30 00:33:09,660 - INFO - Starting training...
+2025-06-30 00:33:27,762 - INFO - Training completed successfully
+2025-06-30 00:33:27,999 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 00:33:28,002 - INFO - Starting training for task: qnli
+2025-06-30 00:33:28,003 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:33:28,003 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:33:28,213 - INFO - Tokenizer loaded successfully
+2025-06-30 00:33:28,214 - INFO - Loading dataset: glue/qnli
+2025-06-30 00:33:29,717 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 00:33:29,768 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:33:29,769 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:33:30,108 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:33:30,109 - INFO - Setting up training arguments
+2025-06-30 00:33:30,202 - INFO - Setting up trainer
+2025-06-30 00:33:30,223 - INFO - Starting training...
+2025-06-30 00:33:58,630 - INFO - Training completed successfully
+2025-06-30 00:33:58,808 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 00:39:04,440 - INFO - Starting training for task: sst2
+2025-06-30 00:39:04,441 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:39:04,471 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:39:04,781 - INFO - Tokenizer loaded successfully
+2025-06-30 00:39:04,782 - INFO - Loading dataset: glue/sst2
+2025-06-30 00:39:06,703 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 00:39:06,735 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:39:06,736 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:39:09,453 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:39:09,454 - INFO - Setting up training arguments
+2025-06-30 00:39:09,567 - INFO - Setting up trainer
+2025-06-30 00:39:09,597 - INFO - Starting training...
+2025-06-30 00:39:28,059 - INFO - Training completed successfully
+2025-06-30 00:39:28,281 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 00:39:28,284 - INFO - Starting training for task: qnli
+2025-06-30 00:39:28,285 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:39:28,285 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:39:28,463 - INFO - Tokenizer loaded successfully
+2025-06-30 00:39:28,464 - INFO - Loading dataset: glue/qnli
+2025-06-30 00:39:29,671 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 00:39:29,726 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:39:29,727 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:39:30,105 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:39:30,106 - INFO - Setting up training arguments
+2025-06-30 00:39:30,180 - INFO - Setting up trainer
+2025-06-30 00:39:30,192 - INFO - Starting training...
+2025-06-30 00:39:57,968 - INFO - Training completed successfully
+2025-06-30 00:39:58,163 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 00:48:46,335 - INFO - Starting training for task: sst2
+2025-06-30 00:48:46,335 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:48:46,375 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:48:46,600 - INFO - Tokenizer loaded successfully
+2025-06-30 00:48:46,601 - INFO - Loading dataset: glue/sst2
+2025-06-30 00:48:48,210 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 00:48:48,242 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:48:48,242 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:48:49,285 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:48:49,286 - INFO - Setting up training arguments
+2025-06-30 00:48:49,386 - INFO - Setting up trainer
+2025-06-30 00:48:49,414 - INFO - Starting training...
+2025-06-30 00:49:07,116 - INFO - Training completed successfully
+2025-06-30 00:49:07,304 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 00:49:07,306 - INFO - Starting training for task: qnli
+2025-06-30 00:49:07,307 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:49:07,307 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:49:07,530 - INFO - Tokenizer loaded successfully
+2025-06-30 00:49:07,530 - INFO - Loading dataset: glue/qnli
+2025-06-30 00:49:08,698 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 00:49:08,732 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:49:08,733 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:49:09,066 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:49:09,066 - INFO - Setting up training arguments
+2025-06-30 00:49:09,158 - INFO - Setting up trainer
+2025-06-30 00:49:09,175 - INFO - Starting training...
+2025-06-30 00:49:37,496 - INFO - Training completed successfully
+2025-06-30 00:49:37,694 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 00:53:46,478 - INFO - Starting training for task: sst2
+2025-06-30 00:53:46,478 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:53:46,519 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:53:46,777 - INFO - Tokenizer loaded successfully
+2025-06-30 00:53:46,777 - INFO - Loading dataset: glue/sst2
+2025-06-30 00:53:48,491 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 00:53:48,510 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:53:48,511 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:53:49,529 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:53:49,530 - INFO - Setting up training arguments
+2025-06-30 00:53:49,622 - INFO - Setting up trainer
+2025-06-30 00:53:49,652 - INFO - Starting training...
+2025-06-30 00:54:07,406 - INFO - Training completed successfully
+2025-06-30 00:54:07,583 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 00:54:07,585 - INFO - Starting training for task: qnli
+2025-06-30 00:54:07,586 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 00:54:07,586 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 00:54:07,751 - INFO - Tokenizer loaded successfully
+2025-06-30 00:54:07,752 - INFO - Loading dataset: glue/qnli
+2025-06-30 00:54:09,008 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 00:54:09,032 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 00:54:09,033 - INFO - Loading model: bert-base-uncased
+2025-06-30 00:54:09,360 - INFO - Model loaded and moved to device: cuda
+2025-06-30 00:54:09,361 - INFO - Setting up training arguments
+2025-06-30 00:54:09,449 - INFO - Setting up trainer
+2025-06-30 00:54:09,466 - INFO - Starting training...
+2025-06-30 00:54:37,715 - INFO - Training completed successfully
+2025-06-30 00:54:37,885 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 01:19:12,684 - INFO - Starting training for task: sst2
+2025-06-30 01:19:12,685 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:19:12,727 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:19:13,014 - INFO - Tokenizer loaded successfully
+2025-06-30 01:19:13,015 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:19:14,702 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:19:14,735 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:19:14,735 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:19:16,950 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:19:16,950 - INFO - Setting up training arguments
+2025-06-30 01:19:17,036 - INFO - Setting up trainer
+2025-06-30 01:19:17,074 - INFO - Starting training...
+2025-06-30 01:19:33,088 - INFO - Training completed successfully
+2025-06-30 01:19:33,394 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:19:33,397 - INFO - Starting training for task: qnli
+2025-06-30 01:19:33,397 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:19:33,398 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:19:33,741 - INFO - Tokenizer loaded successfully
+2025-06-30 01:19:33,741 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:19:34,911 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:19:34,945 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:19:34,946 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:19:35,333 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:19:35,334 - INFO - Setting up training arguments
+2025-06-30 01:19:35,418 - INFO - Setting up trainer
+2025-06-30 01:19:35,431 - INFO - Starting training...
+2025-06-30 01:20:04,293 - INFO - Training completed successfully
+2025-06-30 01:20:04,595 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 01:25:14,745 - INFO - Starting training for task: sst2
+2025-06-30 01:25:14,746 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:25:14,787 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:25:15,028 - INFO - Tokenizer loaded successfully
+2025-06-30 01:25:15,029 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:25:16,975 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:25:17,011 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:25:17,011 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:25:19,070 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:25:19,071 - INFO - Setting up training arguments
+2025-06-30 01:25:19,156 - INFO - Setting up trainer
+2025-06-30 01:25:19,180 - INFO - Starting training...
+2025-06-30 01:25:20,626 - INFO - Starting training for task: sst2
+2025-06-30 01:25:20,627 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:25:20,677 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:25:20,954 - INFO - Tokenizer loaded successfully
+2025-06-30 01:25:20,955 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:25:22,702 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:25:22,753 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:25:22,754 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:25:25,443 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:25:25,443 - INFO - Setting up training arguments
+2025-06-30 01:25:25,524 - INFO - Setting up trainer
+2025-06-30 01:25:25,560 - INFO - Starting training...
+2025-06-30 01:25:35,016 - INFO - Training completed successfully
+2025-06-30 01:25:35,313 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:25:35,316 - INFO - Starting training for task: qnli
+2025-06-30 01:25:35,316 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:25:35,317 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:25:35,491 - INFO - Tokenizer loaded successfully
+2025-06-30 01:25:35,492 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:25:36,964 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:25:36,998 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:25:36,998 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:25:37,380 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:25:37,380 - INFO - Setting up training arguments
+2025-06-30 01:25:37,463 - INFO - Setting up trainer
+2025-06-30 01:25:37,477 - INFO - Starting training...
+2025-06-30 01:25:44,106 - INFO - Training completed successfully
+2025-06-30 01:25:44,297 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:25:44,299 - INFO - Starting training for task: qnli
+2025-06-30 01:25:44,300 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:25:44,301 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:25:44,503 - INFO - Tokenizer loaded successfully
+2025-06-30 01:25:44,504 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:25:45,706 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:25:45,758 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:25:45,758 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:25:46,103 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:25:46,104 - INFO - Setting up training arguments
+2025-06-30 01:25:46,211 - INFO - Setting up trainer
+2025-06-30 01:25:46,224 - INFO - Starting training...
+2025-06-30 01:26:05,807 - INFO - Training completed successfully
+2025-06-30 01:26:06,104 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 01:26:13,862 - INFO - Training completed successfully
+2025-06-30 01:26:14,044 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 01:34:04,215 - INFO - Starting training for task: sst2
+2025-06-30 01:34:04,216 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:34:04,234 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:34:04,464 - INFO - Tokenizer loaded successfully
+2025-06-30 01:34:04,465 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:34:04,530 - INFO - Starting training for task: sst2
+2025-06-30 01:34:04,531 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:34:04,571 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:34:04,825 - INFO - Tokenizer loaded successfully
+2025-06-30 01:34:04,826 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:34:06,098 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:34:06,129 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:34:06,129 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:34:06,506 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:34:06,537 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:34:06,538 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:34:07,115 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:34:07,116 - INFO - Setting up training arguments
+2025-06-30 01:34:07,185 - INFO - Setting up trainer
+2025-06-30 01:34:07,210 - INFO - Starting training...
+2025-06-30 01:34:07,690 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:34:07,691 - INFO - Setting up training arguments
+2025-06-30 01:34:07,765 - INFO - Setting up trainer
+2025-06-30 01:34:07,783 - INFO - Starting training...
+2025-06-30 01:34:23,840 - INFO - Training completed successfully
+2025-06-30 01:34:24,038 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:34:24,042 - INFO - Starting training for task: qnli
+2025-06-30 01:34:24,043 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:34:24,044 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:34:24,212 - INFO - Tokenizer loaded successfully
+2025-06-30 01:34:24,213 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:34:25,102 - INFO - Training completed successfully
+2025-06-30 01:34:25,299 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:34:25,301 - INFO - Starting training for task: qnli
+2025-06-30 01:34:25,302 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:34:25,302 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:34:25,438 - INFO - Starting training for task: sst2
+2025-06-30 01:34:25,439 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:34:25,466 - INFO - Tokenizer loaded successfully
+2025-06-30 01:34:25,467 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:34:25,486 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:34:25,710 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:34:25,743 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:34:25,744 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:34:25,818 - INFO - Tokenizer loaded successfully
+2025-06-30 01:34:25,819 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:34:26,080 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:34:26,081 - INFO - Setting up training arguments
+2025-06-30 01:34:26,167 - INFO - Setting up trainer
+2025-06-30 01:34:26,180 - INFO - Starting training...
+2025-06-30 01:34:26,608 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:34:26,641 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:34:26,642 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:34:26,979 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:34:26,980 - INFO - Setting up training arguments
+2025-06-30 01:34:27,054 - INFO - Setting up trainer
+2025-06-30 01:34:27,067 - INFO - Starting training...
+2025-06-30 01:34:28,168 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:34:28,217 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:34:28,217 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:34:30,963 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:34:30,964 - INFO - Setting up training arguments
+2025-06-30 01:34:31,065 - INFO - Setting up trainer
+2025-06-30 01:34:31,102 - INFO - Starting training...
+2025-06-30 01:34:49,768 - INFO - Training completed successfully
+2025-06-30 01:34:49,967 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:34:49,969 - INFO - Starting training for task: qnli
+2025-06-30 01:34:49,970 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:34:49,970 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:34:50,217 - INFO - Tokenizer loaded successfully
+2025-06-30 01:34:50,218 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:34:51,529 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:34:51,584 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:34:51,585 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:34:51,929 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:34:51,930 - INFO - Setting up training arguments
+2025-06-30 01:34:52,019 - INFO - Setting up trainer
+2025-06-30 01:34:52,034 - INFO - Starting training...
+2025-06-30 01:34:55,068 - INFO - Training completed successfully
+2025-06-30 01:34:55,274 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 01:34:55,506 - INFO - Training completed successfully
+2025-06-30 01:34:55,701 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 01:35:20,618 - INFO - Training completed successfully
+2025-06-30 01:35:20,816 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 01:39:03,255 - INFO - Starting training for task: sst2
+2025-06-30 01:39:03,256 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:39:03,307 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:39:03,582 - INFO - Tokenizer loaded successfully
+2025-06-30 01:39:03,583 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:39:05,309 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:39:05,357 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:39:05,358 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:39:08,119 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:39:08,120 - INFO - Setting up training arguments
+2025-06-30 01:39:08,214 - INFO - Setting up trainer
+2025-06-30 01:39:08,249 - INFO - Starting training...
+2025-06-30 01:39:26,379 - INFO - Training completed successfully
+2025-06-30 01:39:26,548 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:39:26,551 - INFO - Starting training for task: qnli
+2025-06-30 01:39:26,551 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:39:26,552 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:39:26,752 - INFO - Tokenizer loaded successfully
+2025-06-30 01:39:26,753 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:39:27,963 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:39:28,005 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:39:28,006 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:39:28,347 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:39:28,348 - INFO - Setting up training arguments
+2025-06-30 01:39:28,443 - INFO - Setting up trainer
+2025-06-30 01:39:28,457 - INFO - Starting training...
+2025-06-30 01:39:57,851 - INFO - Training completed successfully
+2025-06-30 01:39:58,027 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 01:41:45,182 - INFO - Starting training for task: sst2
+2025-06-30 01:41:45,182 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:41:45,226 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:41:45,471 - INFO - Tokenizer loaded successfully
+2025-06-30 01:41:45,472 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:41:47,009 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:41:47,041 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:41:47,042 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:41:48,030 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:41:48,031 - INFO - Setting up training arguments
+2025-06-30 01:41:48,069 - INFO - Setting up trainer
+2025-06-30 01:41:48,088 - INFO - Starting training...
+2025-06-30 01:42:05,272 - INFO - Training completed successfully
+2025-06-30 01:42:05,459 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:42:05,462 - INFO - Starting training for task: qnli
+2025-06-30 01:42:05,462 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:42:05,462 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:42:05,664 - INFO - Tokenizer loaded successfully
+2025-06-30 01:42:05,665 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:42:06,861 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:42:06,894 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:42:06,894 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:42:07,208 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:42:07,209 - INFO - Setting up training arguments
+2025-06-30 01:42:07,296 - INFO - Setting up trainer
+2025-06-30 01:42:07,309 - INFO - Starting training...
+2025-06-30 01:42:36,639 - INFO - Training completed successfully
+2025-06-30 01:42:36,820 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 01:43:06,174 - INFO - Starting training for task: sst2
+2025-06-30 01:43:06,175 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:43:06,196 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:43:07,048 - INFO - Tokenizer loaded successfully
+2025-06-30 01:43:07,048 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:43:08,812 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:43:08,843 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:43:08,843 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:43:09,877 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:43:09,878 - INFO - Setting up training arguments
+2025-06-30 01:43:09,974 - INFO - Setting up trainer
+2025-06-30 01:43:09,994 - INFO - Starting training...
+2025-06-30 01:43:27,145 - INFO - Training completed successfully
+2025-06-30 01:43:27,326 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:43:27,329 - INFO - Starting training for task: qnli
+2025-06-30 01:43:27,329 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:43:27,330 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:43:27,533 - INFO - Tokenizer loaded successfully
+2025-06-30 01:43:27,533 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:43:28,679 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:43:28,711 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:43:28,712 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:43:29,033 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:43:29,034 - INFO - Setting up training arguments
+2025-06-30 01:43:29,065 - INFO - Setting up trainer
+2025-06-30 01:43:29,078 - INFO - Starting training...
+2025-06-30 01:43:58,530 - INFO - Training completed successfully
+2025-06-30 01:43:58,712 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 01:44:44,515 - INFO - Starting training for task: sst2
+2025-06-30 01:44:44,515 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:44:44,537 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:44:44,824 - INFO - Tokenizer loaded successfully
+2025-06-30 01:44:44,825 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:44:46,451 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:44:46,484 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:44:46,484 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:44:47,555 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:44:47,556 - INFO - Setting up training arguments
+2025-06-30 01:44:47,617 - INFO - Setting up trainer
+2025-06-30 01:44:47,636 - INFO - Starting training...
+2025-06-30 01:45:04,824 - INFO - Training completed successfully
+2025-06-30 01:45:05,005 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:45:05,007 - INFO - Starting training for task: qnli
+2025-06-30 01:45:05,008 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:45:05,008 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:45:05,212 - INFO - Tokenizer loaded successfully
+2025-06-30 01:45:05,212 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:45:06,359 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:45:06,392 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:45:06,393 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:45:06,709 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:45:06,710 - INFO - Setting up training arguments
+2025-06-30 01:45:06,809 - INFO - Setting up trainer
+2025-06-30 01:45:06,822 - INFO - Starting training...
+2025-06-30 01:45:36,235 - INFO - Training completed successfully
+2025-06-30 01:45:36,415 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 03:16:50,939 - INFO - Starting training for task: sst2 with seed: 42
+2025-06-30 03:16:50,940 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=5000, eval_size=1000, device='cuda', epochs=4, batch_train=32, batch_eval=64, save_checkpoints=True, checkpoint_dir='checkpoints', wandb_project='direction_aware_fusion', wandb_entity='your_wandb_entity', wandb_run_name='default_run', wandb=True, log_interval=100, seeds=[42, 123, 456], num_seeds=3, seed=42, confidence_interval=0.95, enable_averaging=False, save_individual_runs=True, aggregation_method='mean')
+2025-06-30 03:16:50,968 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 03:16:51,269 - INFO - Tokenizer loaded successfully
+2025-06-30 03:16:51,270 - INFO - Loading dataset: glue/sst2
+2025-06-30 03:16:52,965 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 03:16:53,528 - INFO - Data preprocessing complete. Train samples: 5000, Val samples: 872
+2025-06-30 03:16:53,528 - INFO - Loading model: bert-base-uncased
+2025-06-30 03:16:55,960 - INFO - Model loaded and moved to device: cuda
+2025-06-30 03:16:55,961 - INFO - Setting up training arguments
+2025-06-30 03:16:56,060 - INFO - Setting up trainer
+2025-06-30 03:16:56,083 - INFO - Starting training...
+2025-06-30 03:17:01,615 - INFO - Starting training for task: sst2 with seed: 42
+2025-06-30 03:17:01,616 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=5000, eval_size=1000, device='cuda', epochs=4, batch_train=32, batch_eval=64, save_checkpoints=True, checkpoint_dir='checkpoints', wandb_project='direction_aware_fusion', wandb_entity='your_wandb_entity', wandb_run_name='default_run', wandb=True, log_interval=100, seeds=[42, 123, 456], num_seeds=3, seed=42, confidence_interval=0.95, enable_averaging=False, save_individual_runs=True, aggregation_method='mean')
+2025-06-30 03:17:01,665 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 03:17:01,986 - INFO - Tokenizer loaded successfully
+2025-06-30 03:17:01,987 - INFO - Loading dataset: glue/sst2
+2025-06-30 03:17:03,862 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 03:17:03,981 - INFO - Data preprocessing complete. Train samples: 5000, Val samples: 872
+2025-06-30 03:17:03,982 - INFO - Loading model: bert-base-uncased
+2025-06-30 03:17:06,558 - INFO - Model loaded and moved to device: cuda
+2025-06-30 03:17:06,559 - INFO - Setting up training arguments
+2025-06-30 03:17:06,655 - INFO - Setting up trainer
+2025-06-30 03:17:06,678 - INFO - Starting training...
+2025-06-30 03:17:56,150 - INFO - Starting training for task: sst2 with seed: 42
+2025-06-30 03:17:56,151 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=5000, eval_size=1000, device='cuda', epochs=4, batch_train=32, batch_eval=64, save_checkpoints=True, checkpoint_dir='checkpoints', wandb_project='direction_aware_fusion', wandb_entity='your_wandb_entity', wandb_run_name='default_run', wandb=True, log_interval=100, seeds=[42, 123, 456], num_seeds=3, seed=42, confidence_interval=0.95, enable_averaging=False, save_individual_runs=True, aggregation_method='mean')
+2025-06-30 03:17:56,174 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 03:17:56,426 - INFO - Training completed successfully
+2025-06-30 03:17:56,467 - INFO - Tokenizer loaded successfully
+2025-06-30 03:17:56,467 - INFO - Loading dataset: glue/sst2
+2025-06-30 03:17:56,624 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 03:17:56,628 - INFO - Starting training for task: qnli with seed: 42
+2025-06-30 03:17:56,629 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=5000, eval_size=1000, device='cuda', epochs=4, batch_train=32, batch_eval=64, save_checkpoints=True, checkpoint_dir='checkpoints', wandb_project='direction_aware_fusion', wandb_entity='your_wandb_entity', wandb_run_name='default_run', wandb=True, log_interval=100, seeds=[42, 123, 456], num_seeds=3, seed=42, confidence_interval=0.95, enable_averaging=False, save_individual_runs=True, aggregation_method='mean')
+2025-06-30 03:17:56,629 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 03:17:56,833 - INFO - Tokenizer loaded successfully
+2025-06-30 03:17:56,834 - INFO - Loading dataset: glue/qnli
+2025-06-30 03:17:58,056 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 03:17:58,365 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 03:17:58,398 - INFO - Data preprocessing complete. Train samples: 5000, Val samples: 872
+2025-06-30 03:17:58,398 - INFO - Loading model: bert-base-uncased
+2025-06-30 03:17:59,360 - INFO - Data preprocessing complete. Train samples: 5000, Val samples: 1000
+2025-06-30 03:17:59,361 - INFO - Loading model: bert-base-uncased
+2025-06-30 03:17:59,673 - INFO - Model loaded and moved to device: cuda
+2025-06-30 03:17:59,674 - INFO - Setting up training arguments
+2025-06-30 03:17:59,754 - INFO - Setting up trainer
+2025-06-30 03:17:59,768 - INFO - Starting training...
+2025-06-30 03:18:00,408 - INFO - Model loaded and moved to device: cuda
+2025-06-30 03:18:00,409 - INFO - Setting up training arguments
+2025-06-30 03:18:00,475 - INFO - Setting up trainer
+2025-06-30 03:18:00,493 - INFO - Starting training...
+2025-06-30 03:18:08,056 - INFO - Training completed successfully
+2025-06-30 03:18:08,248 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 03:18:08,252 - INFO - Starting training for task: qnli with seed: 42
+2025-06-30 03:18:08,252 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=5000, eval_size=1000, device='cuda', epochs=4, batch_train=32, batch_eval=64, save_checkpoints=True, checkpoint_dir='checkpoints', wandb_project='direction_aware_fusion', wandb_entity='your_wandb_entity', wandb_run_name='default_run', wandb=True, log_interval=100, seeds=[42, 123, 456], num_seeds=3, seed=42, confidence_interval=0.95, enable_averaging=False, save_individual_runs=True, aggregation_method='mean')
+2025-06-30 03:18:08,253 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 03:18:08,477 - INFO - Tokenizer loaded successfully
+2025-06-30 03:18:08,478 - INFO - Loading dataset: glue/qnli
+2025-06-30 03:18:09,679 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 03:18:09,808 - INFO - Data preprocessing complete. Train samples: 5000, Val samples: 1000
+2025-06-30 03:18:09,808 - INFO - Loading model: bert-base-uncased
+2025-06-30 03:18:10,130 - INFO - Model loaded and moved to device: cuda
+2025-06-30 03:18:10,130 - INFO - Setting up training arguments
+2025-06-30 03:18:10,222 - INFO - Setting up trainer
+2025-06-30 03:18:10,240 - INFO - Starting training...
+2025-06-30 03:18:59,843 - INFO - Training completed successfully
+2025-06-30 03:19:00,127 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 03:19:00,131 - INFO - Starting training for task: qnli with seed: 42
+2025-06-30 03:19:00,131 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=5000, eval_size=1000, device='cuda', epochs=4, batch_train=32, batch_eval=64, save_checkpoints=True, checkpoint_dir='checkpoints', wandb_project='direction_aware_fusion', wandb_entity='your_wandb_entity', wandb_run_name='default_run', wandb=True, log_interval=100, seeds=[42, 123, 456], num_seeds=3, seed=42, confidence_interval=0.95, enable_averaging=False, save_individual_runs=True, aggregation_method='mean')
+2025-06-30 03:19:00,132 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 03:19:00,305 - INFO - Tokenizer loaded successfully
+2025-06-30 03:19:00,305 - INFO - Loading dataset: glue/qnli
+2025-06-30 03:19:01,434 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 03:19:01,468 - INFO - Data preprocessing complete. Train samples: 5000, Val samples: 1000
+2025-06-30 03:19:01,468 - INFO - Loading model: bert-base-uncased
+2025-06-30 03:19:01,837 - INFO - Model loaded and moved to device: cuda
+2025-06-30 03:19:01,837 - INFO - Setting up training arguments
+2025-06-30 03:19:01,888 - INFO - Setting up trainer
+2025-06-30 03:19:01,901 - INFO - Starting training...
+2025-06-30 03:20:12,522 - INFO - Training completed successfully
+2025-06-30 03:20:12,721 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 03:20:26,419 - INFO - Training completed successfully
+2025-06-30 03:20:26,615 - INFO - Model moved to CPU and training finished for task: qnli
+2025-06-30 03:21:12,708 - INFO - Training completed successfully
+2025-06-30 03:21:12,990 - INFO - Model moved to CPU and training finished for task: qnli

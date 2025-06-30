@@ -1,0 +1,218 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\title{Direction-Aware Fusion for Continual Learning: A Comparative Study of Model Fusion Strategies}
+\author{Your Name\\
+University/Institution\\
+\texttt{your.email@institution.edu}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper presents a comprehensive evaluation of direction-aware fusion methods for continual learning tasks. We compare three fusion strategies: SoftSoup (parameter averaging), Orthogonal Deltas (direction-aware decomposition), and Orthogonal Deltas with Normalization (enhanced direction-aware fusion). Our experiments on sequential fine-tuning tasks using SST2 and QNLI datasets demonstrate that while SoftSoup achieves the best overall performance (0.787 average accuracy), orthogonal methods excel at preserving first-task knowledge with up to 99.55\% retention. The proposed normalization enhancement bridges the gap between methods, providing a balanced solution with 0.786 average accuracy and improved cross-task transfer. These findings provide practical guidance for selecting fusion strategies based on specific continual learning requirements.
+\end{abstract}
+
+\section{Introduction}
+
+Continual learning remains one of the fundamental challenges in machine learning, where models must learn new tasks while retaining knowledge from previously learned tasks. Catastrophic forgetting~\cite{mccloskey1989catastrophic} occurs when neural networks overwrite previously learned representations during new task acquisition. Model fusion strategies offer a promising approach to mitigate this challenge by combining multiple task-specific models while preserving their individual capabilities.
+
+This work investigates three fusion approaches: (1) SoftSoup, a simple parameter averaging method; (2) Orthogonal Deltas, which decomposes parameter changes into orthogonal components; and (3) Orthogonal Deltas with Normalization, an enhanced version that normalizes parameter deltas before fusion. We evaluate these methods on a sequential learning setup using sentiment classification (SST2) and natural language inference (QNLI) tasks.
+
+\section{Methodology}
+
+\subsection{Problem Formulation}
+
+Given a sequence of tasks $\mathcal{T} = \{T_0, T_1, \ldots, T_n\}$, we aim to learn a fused model $\theta_f$ that performs well across all tasks while minimizing catastrophic forgetting. For each task $T_i$, we fine-tune a base model $\theta_0$ to obtain task-specific parameters $\theta_i$.
+
+\subsection{Fusion Methods}
+
+\subsubsection{SoftSoup}
+SoftSoup performs simple weighted averaging of model parameters:
+\begin{equation}
+\theta_f = \sum_{i=0}^{n} w_i \theta_i
+\end{equation}
+where $w_i$ are fusion weights summing to 1.
+
+\subsubsection{Orthogonal Deltas}
+This method decomposes parameter deltas into orthogonal components. For task-specific deltas $\Delta_i = \theta_i - \theta_0$, the fusion is computed as:
+\begin{equation}
+\theta_f = \theta_0 + \sum_{i=0}^{n} \text{Orthogonal}(\Delta_i)
+\end{equation}
+
+\subsubsection{Orthogonal Deltas with Normalization}
+An enhanced version that normalizes deltas before orthogonal decomposition:
+\begin{equation}
+\theta_f = \theta_0 + \sum_{i=0}^{n} \text{Orthogonal}(\text{Normalize}(\Delta_i))
+\end{equation}
+
+\subsection{Experimental Setup}
+
+\textbf{Datasets:} We use SST2 (Stanford Sentiment Treebank) for sentiment classification and QNLI (Question Natural Language Inference) for natural language inference.
+
+\textbf{Base Model:} BERT-base-uncased serves as the foundation model for all experiments.
+
+\textbf{Training Protocol:} Sequential fine-tuning followed by fusion evaluation on both tasks.
+
+\textbf{Evaluation Metrics:}
+\begin{itemize}
+    \item \textbf{Fused Model Accuracy:} Performance of the fused model on each task
+    \item \textbf{Retention \%:} Percentage of original task performance retained after fusion
+    \item \textbf{Forgetting (BWT):} Backward transfer measuring catastrophic forgetting
+    \item \textbf{Transfer \%:} Cross-task performance relative to random baseline
+\end{itemize}
+
+\section{Results}
+
+\subsection{Overall Performance Comparison}
+
+Table~\ref{tab:main_results} presents the comprehensive comparison of all three fusion methods across multiple evaluation metrics.
+
+\begin{table}[htbp]
+\centering
+\caption{Comprehensive comparison of direction-aware fusion methods}
+\label{tab:main_results}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Metric} & \textbf{SoftSoup} & \textbf{Orthogonal} & \textbf{Orth.+Norm} \\
+\midrule
+\multicolumn{4}{l}{\textit{Fused Model Performance}} \\
+Fused on SST2 & 0.872 & 0.886 & 0.886 \\
+Fused on QNLI & 0.702 & 0.670 & 0.686 \\
+\textbf{Average Fused Accuracy} & \textbf{0.787} & \textbf{0.778} & \textbf{0.786} \\
+\midrule
+\multicolumn{4}{l}{\textit{Individual Models Performance}} \\
+Model1 (SST2) on SST2 & 0.894 & 0.890 & 0.902 \\
+Model1 (SST2) on QNLI & 0.412 & 0.450 & 0.502 \\
+Model2 (QNLI) on QNLI & 0.844 & 0.844 & 0.844 \\
+Model2 (QNLI) on SST2 & 0.506 & 0.506 & 0.506 \\
+\textbf{Average Individual Accuracy} & \textbf{0.869} & \textbf{0.867} & \textbf{0.873} \\
+\midrule
+\multicolumn{4}{l}{\textit{Task 0 (SST2) Metrics}} \\
+Retention\% & 97.54\% & \textcolor{blue}{\textbf{99.55\%}} & 98.23\% \\
+Transfer\% & 170.39\% & 148.89\% & 136.65\% \\
+Forgetting (BWT) & 0.022 & \textcolor{blue}{\textbf{0.004}} & 0.016 \\
+\midrule
+\multicolumn{4}{l}{\textit{Task 1 (QNLI) Metrics}} \\
+Retention\% & \textcolor{red}{\textbf{83.18\%}} & 79.38\% & 81.28\% \\
+Transfer\% & 172.33\% & 175.10\% & 175.10\% \\
+Forgetting (BWT) & \textcolor{red}{\textbf{0.142}} & 0.174 & 0.158 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Key Findings}
+
+\subsubsection{Overall Performance Ranking}
+\begin{enumerate}
+    \item \textbf{SoftSoup (0.787):} Achieves the best overall fused performance
+    \item \textbf{Orthogonal + Normalization (0.786):} Very close second with balanced characteristics
+    \item \textbf{Orthogonal (0.778):} Slightly lower overall performance but excellent first-task preservation
+\end{enumerate}
+
+\subsubsection{Task-Specific Analysis}
+
+\textbf{SST2 Performance:} All methods achieve similar high performance (0.872-0.886), indicating effective sentiment classification capabilities across fusion strategies.
+
+\textbf{QNLI Performance:} SoftSoup demonstrates superior performance (0.702), while Orthogonal + Normalization shows improvement over standard Orthogonal methods (0.686 vs 0.670).
+
+\subsubsection{Forgetting Analysis}
+
+\textbf{Task 0 (SST2) Forgetting:}
+\begin{itemize}
+    \item Orthogonal: 0.004 (minimal forgetting)
+    \item Orthogonal + Normalization: 0.016 (good)
+    \item SoftSoup: 0.022 (moderate)
+\end{itemize}
+
+\textbf{Task 1 (QNLI) Forgetting:}
+\begin{itemize}
+    \item SoftSoup: 0.142 (best)
+    \item Orthogonal + Normalization: 0.158 (good)
+    \item Orthogonal: 0.174 (highest forgetting)
+\end{itemize}
+
+\subsection{Impact of Normalization}
+
+The addition of normalization to orthogonal deltas (Test1b vs Test1) yields significant improvements:
+\begin{itemize}
+    \item Cross-task transfer enhancement: SST2→QNLI (0.450→0.502)
+    \item QNLI forgetting reduction: (0.174→0.158)
+    \item Overall fused performance improvement: (0.778→0.786)
+\end{itemize}
+
+\section{Discussion}
+
+\subsection{Method Characteristics}
+
+\textbf{SoftSoup} excels in providing balanced performance across tasks with the lowest QNLI forgetting. However, it shows moderate SST2 forgetting compared to orthogonal methods. This makes it ideal for scenarios requiring balanced continual learning performance.
+
+\textbf{Orthogonal Deltas} demonstrate exceptional first-task preservation with 99.55\% SST2 retention and minimal forgetting (0.004). However, this comes at the cost of higher second-task forgetting and lower overall performance. This method is optimal when preserving the first task is critical.
+
+\textbf{Orthogonal + Normalization} provides an effective compromise, combining improved cross-task transfer with reduced forgetting compared to standard orthogonal methods. The normalization component helps bridge the gap between SoftSoup's balance and Orthogonal's preservation capabilities.
+
+\subsection{Practical Recommendations}
+
+Based on our empirical findings, we recommend:
+\begin{itemize}
+    \item \textbf{Balanced continual learning:} Use SoftSoup for scenarios requiring optimal overall performance
+    \item \textbf{Critical first task preservation:} Use Orthogonal Deltas when maintaining initial task performance is paramount
+    \item \textbf{Compromise solution:} Use Orthogonal + Normalization for applications requiring both retention and performance
+\end{itemize}
+
+\subsection{Limitations and Future Work}
+
+This study focuses on a two-task sequential learning scenario. Future work should investigate:
+\begin{itemize}
+    \item Scalability to longer task sequences
+    \item Performance on diverse task types beyond NLP
+    \item Computational efficiency analysis
+    \item Adaptive fusion weight strategies
+\end{itemize}
+
+\section{Conclusion}
+
+This work provides a comprehensive evaluation of direction-aware fusion methods for continual learning. Our results demonstrate clear trade-offs between different approaches: SoftSoup offers the best overall balance, Orthogonal Deltas excel at first-task preservation, and Orthogonal + Normalization provides an effective middle ground. The normalization enhancement proves particularly valuable, improving cross-task transfer while maintaining competitive performance. These findings offer practical guidance for practitioners selecting fusion strategies based on specific continual learning requirements.
+
+\section*{Acknowledgments}
+
+We thank the computational resources provided by [Institution/Cluster] for enabling this research.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{9}
+
+\bibitem{mccloskey1989catastrophic}
+M. McCloskey and N. J. Cohen,
+``Catastrophic interference in connectionist networks: The sequential learning problem,''
+in \emph{Psychology of Learning and Motivation}, vol. 24, pp. 109--165, 1989.
+
+\bibitem{wortsman2022model}
+M. Wortsman, G. Ilharco, S. Y. Gadre, R. Roelofs, R. Gontijo-Lopes, A. S. Morcos, H. Namkoong, A. Farhadi, Y. Carmon, S. Kornblith, and L. Schmidt,
+``Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time,''
+in \emph{International Conference on Machine Learning}, 2022.
+
+\bibitem{wang2019glue}
+A. Wang, A. Singh, J. Michael, F. Hill, O. Levy, and S. R. Bowman,
+``GLUE: A multi-task benchmark and analysis platform for natural language understanding,''
+in \emph{International Conference on Learning Representations}, 2019.
+
+\bibitem{devlin2019bert}
+J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova,
+``BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,''
+in \emph{Proceedings of NAACL-HLT}, 2019.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,127 @@
+2025-06-30 01:41:45,182 - INFO - Starting training for task: sst2
+2025-06-30 01:41:45,182 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:41:45,226 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:41:45,471 - INFO - Tokenizer loaded successfully
+2025-06-30 01:41:45,472 - INFO - Loading dataset: glue/sst2
+2025-06-30 01:41:47,009 - INFO - Dataset loaded. Train size: 67349, Val size: 872
+2025-06-30 01:41:47,041 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:41:47,042 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:41:48,030 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:41:48,031 - INFO - Setting up training arguments
+2025-06-30 01:41:48,069 - INFO - Setting up trainer
+2025-06-30 01:41:48,088 - INFO - Starting training...
+{'loss': 0.7065, 'grad_norm': 3.0857832431793213, 'learning_rate': 4.82e-05, 'epoch': 0.08}
+{'loss': 0.5939, 'grad_norm': 8.757278442382812, 'learning_rate': 4.6200000000000005e-05, 'epoch': 0.16}
+{'loss': 0.4447, 'grad_norm': 18.981557846069336, 'learning_rate': 4.4200000000000004e-05, 'epoch': 0.24}
+{'loss': 0.4503, 'grad_norm': 7.270138740539551, 'learning_rate': 4.22e-05, 'epoch': 0.32}
+{'loss': 0.4857, 'grad_norm': 4.697752475738525, 'learning_rate': 4.02e-05, 'epoch': 0.4}
+{'loss': 0.373, 'grad_norm': 9.115533828735352, 'learning_rate': 3.82e-05, 'epoch': 0.48}
+{'loss': 0.364, 'grad_norm': 18.501699447631836, 'learning_rate': 3.62e-05, 'epoch': 0.56}
+{'loss': 0.3573, 'grad_norm': 12.231648445129395, 'learning_rate': 3.4200000000000005e-05, 'epoch': 0.64}
+{'loss': 0.4042, 'grad_norm': 8.116726875305176, 'learning_rate': 3.2200000000000003e-05, 'epoch': 0.72}
+{'loss': 0.3395, 'grad_norm': 26.089191436767578, 'learning_rate': 3.02e-05, 'epoch': 0.8}
+{'loss': 0.3628, 'grad_norm': 8.939278602600098, 'learning_rate': 2.8199999999999998e-05, 'epoch': 0.88}
+{'loss': 0.3942, 'grad_norm': 7.298749923706055, 'learning_rate': 2.6200000000000003e-05, 'epoch': 0.96}
+{'eval_loss': 0.37514325976371765, 'eval_accuracy': 0.834, 'eval_runtime': 0.4822, 'eval_samples_per_second': 1036.899, 'eval_steps_per_second': 33.181, 'epoch': 1.0}
+{'loss': 0.3243, 'grad_norm': 2.7062132358551025, 'learning_rate': 2.4200000000000002e-05, 'epoch': 1.04}
+{'loss': 0.1532, 'grad_norm': 9.977296829223633, 'learning_rate': 2.22e-05, 'epoch': 1.12}
+{'loss': 0.1832, 'grad_norm': 12.315568923950195, 'learning_rate': 2.0200000000000003e-05, 'epoch': 1.2}
+{'loss': 0.2808, 'grad_norm': 29.05436134338379, 'learning_rate': 1.8200000000000002e-05, 'epoch': 1.28}
+{'loss': 0.17, 'grad_norm': 56.2666015625, 'learning_rate': 1.62e-05, 'epoch': 1.36}
+{'loss': 0.3748, 'grad_norm': 77.41458129882812, 'learning_rate': 1.42e-05, 'epoch': 1.44}
+{'loss': 0.1705, 'grad_norm': 12.828033447265625, 'learning_rate': 1.22e-05, 'epoch': 1.52}
+{'loss': 0.1604, 'grad_norm': 10.408434867858887, 'learning_rate': 1.02e-05, 'epoch': 1.6}
+{'loss': 0.2229, 'grad_norm': 15.123135566711426, 'learning_rate': 8.200000000000001e-06, 'epoch': 1.68}
+{'loss': 0.144, 'grad_norm': 1.4324451684951782, 'learning_rate': 6.2e-06, 'epoch': 1.76}
+{'loss': 0.2139, 'grad_norm': 10.352121353149414, 'learning_rate': 4.2000000000000004e-06, 'epoch': 1.84}
+{'loss': 0.1058, 'grad_norm': 7.416898727416992, 'learning_rate': 2.2e-06, 'epoch': 1.92}
+{'loss': 0.1, 'grad_norm': 0.8939165472984314, 'learning_rate': 2.0000000000000002e-07, 'epoch': 2.0}
+{'eval_loss': 0.3245121240615845, 'eval_accuracy': 0.89, 'eval_runtime': 0.4855, 'eval_samples_per_second': 1029.926, 'eval_steps_per_second': 32.958, 'epoch': 2.0}
+{'train_runtime': 17.008, 'train_samples_per_second': 235.183, 'train_steps_per_second': 14.699, 'train_loss': 0.3151946530342102, 'epoch': 2.0}
+2025-06-30 01:42:05,272 - INFO - Training completed successfully
+2025-06-30 01:42:05,459 - INFO - Model moved to CPU and training finished for task: sst2
+2025-06-30 01:42:05,462 - INFO - Starting training for task: qnli
+2025-06-30 01:42:05,462 - INFO - Config: CFG(model_name='bert-base-uncased', tasks=['sst2', 'qnli'], train_size=2000, eval_size=500, device='cuda', epochs=2, batch_train=16, batch_eval=32)
+2025-06-30 01:42:05,462 - INFO - CUDA available: Quadro RTX 8000
+2025-06-30 01:42:05,664 - INFO - Tokenizer loaded successfully
+2025-06-30 01:42:05,665 - INFO - Loading dataset: glue/qnli
+2025-06-30 01:42:06,861 - INFO - Dataset loaded. Train size: 104743, Val size: 5463
+2025-06-30 01:42:06,894 - INFO - Data preprocessing complete. Train samples: 2000, Val samples: 500
+2025-06-30 01:42:06,894 - INFO - Loading model: bert-base-uncased
+2025-06-30 01:42:07,208 - INFO - Model loaded and moved to device: cuda
+2025-06-30 01:42:07,209 - INFO - Setting up training arguments
+2025-06-30 01:42:07,296 - INFO - Setting up trainer
+2025-06-30 01:42:07,309 - INFO - Starting training...
+{'loss': 0.7156, 'grad_norm': 4.185510158538818, 'learning_rate': 4.82e-05, 'epoch': 0.08}
+{'loss': 0.6707, 'grad_norm': 8.785157203674316, 'learning_rate': 4.6200000000000005e-05, 'epoch': 0.16}
+{'loss': 0.594, 'grad_norm': 4.079275131225586, 'learning_rate': 4.4200000000000004e-05, 'epoch': 0.24}
+{'loss': 0.6035, 'grad_norm': 6.96248197555542, 'learning_rate': 4.22e-05, 'epoch': 0.32}
+{'loss': 0.5417, 'grad_norm': 11.418680191040039, 'learning_rate': 4.02e-05, 'epoch': 0.4}
+{'loss': 0.5277, 'grad_norm': 15.635701179504395, 'learning_rate': 3.82e-05, 'epoch': 0.48}
+{'loss': 0.5814, 'grad_norm': 3.7475790977478027, 'learning_rate': 3.62e-05, 'epoch': 0.56}
+{'loss': 0.5731, 'grad_norm': 8.747978210449219, 'learning_rate': 3.4200000000000005e-05, 'epoch': 0.64}
+{'loss': 0.5049, 'grad_norm': 6.660214900970459, 'learning_rate': 3.2200000000000003e-05, 'epoch': 0.72}
+{'loss': 0.5228, 'grad_norm': 9.119773864746094, 'learning_rate': 3.02e-05, 'epoch': 0.8}
+{'loss': 0.5214, 'grad_norm': 5.414433002471924, 'learning_rate': 2.8199999999999998e-05, 'epoch': 0.88}
+{'loss': 0.5342, 'grad_norm': 8.350957870483398, 'learning_rate': 2.6200000000000003e-05, 'epoch': 0.96}
+{'eval_loss': 0.43188872933387756, 'eval_accuracy': 0.818, 'eval_runtime': 1.0307, 'eval_samples_per_second': 485.124, 'eval_steps_per_second': 15.524, 'epoch': 1.0}
+{'loss': 0.4513, 'grad_norm': 4.300283432006836, 'learning_rate': 2.4200000000000002e-05, 'epoch': 1.04}
+{'loss': 0.3948, 'grad_norm': 22.732988357543945, 'learning_rate': 2.22e-05, 'epoch': 1.12}
+{'loss': 0.4117, 'grad_norm': 21.633926391601562, 'learning_rate': 2.0200000000000003e-05, 'epoch': 1.2}
+{'loss': 0.3476, 'grad_norm': 4.3360724449157715, 'learning_rate': 1.8200000000000002e-05, 'epoch': 1.28}
+{'loss': 0.3332, 'grad_norm': 8.840799331665039, 'learning_rate': 1.62e-05, 'epoch': 1.36}
+{'loss': 0.3146, 'grad_norm': 4.462144374847412, 'learning_rate': 1.42e-05, 'epoch': 1.44}
+{'loss': 0.3259, 'grad_norm': 8.326566696166992, 'learning_rate': 1.22e-05, 'epoch': 1.52}
+{'loss': 0.3616, 'grad_norm': 10.69599723815918, 'learning_rate': 1.02e-05, 'epoch': 1.6}
+{'loss': 0.3706, 'grad_norm': 9.018745422363281, 'learning_rate': 8.200000000000001e-06, 'epoch': 1.68}
+{'loss': 0.2977, 'grad_norm': 5.6575798988342285, 'learning_rate': 6.2e-06, 'epoch': 1.76}
+{'loss': 0.3131, 'grad_norm': 7.533969879150391, 'learning_rate': 4.2000000000000004e-06, 'epoch': 1.84}
+{'loss': 0.3772, 'grad_norm': 13.022882461547852, 'learning_rate': 2.2e-06, 'epoch': 1.92}
+{'loss': 0.3374, 'grad_norm': 4.831995964050293, 'learning_rate': 2.0000000000000002e-07, 'epoch': 2.0}
+{'eval_loss': 0.3866531252861023, 'eval_accuracy': 0.844, 'eval_runtime': 1.0269, 'eval_samples_per_second': 486.885, 'eval_steps_per_second': 15.58, 'epoch': 2.0}
+{'train_runtime': 29.0705, 'train_samples_per_second': 137.597, 'train_steps_per_second': 8.6, 'train_loss': 0.46110140323638915, 'epoch': 2.0}
+2025-06-30 01:42:36,639 - INFO - Training completed successfully
+2025-06-30 01:42:36,820 - INFO - Model moved to CPU and training finished for task: qnli
+Orthogonal accuracies [0.89, 0.45] [0.506, 0.844] [0.886, 0.67]
+CL {'BWT': -0.0040000000000000036, 'FWT': 0.22000000000000003, 'Retention%': 99.5505617977528, 'Transfer%': 148.88888888888889} {'BWT': -0.17399999999999993, 'FWT': 0.38, 'Retention%': 79.38388625592417, 'Transfer%': 175.098814229249}
+
+======== GPU REPORT ========
+
+==============NVSMI LOG==============
+
+Timestamp                                 : Mon Jun 30 01:42:46 2025
+Driver Version                            : 570.133.20
+CUDA Version                              : 12.8
+
+Attached GPUs                             : 1
+GPU 00000000:A4:00.0
+    Accounting Mode                       : Enabled
+    Accounting Mode Buffer Size           : 4000
+    Accounted Processes
+        Process ID                        : 777709
+            GPU Utilization               : 69 %
+            Memory Utilization            : 37 %
+            Max memory usage              : 7510 MiB
+            Time                          : 64908 ms
+            Is Running                    : 0
+
+Mon Jun 30 01:42:47 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.133.20             Driver Version: 570.133.20     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Quadro RTX 8000                On  |   00000000:A4:00.0 Off |                    0 |
+| 41%   55C    P2            112W /  260W |       1MiB /  46080MiB |     90%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
